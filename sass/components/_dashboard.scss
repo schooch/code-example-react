@@ -1,0 +1,24 @@
+.dashboard {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+
+  &.scrollable {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+}

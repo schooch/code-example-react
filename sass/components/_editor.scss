@@ -1,0 +1,82 @@
+.editor {
+  flex: 1 0 350px;
+  min-width: 350px;
+  margin-left: auto;
+  background-color: $background;
+  padding: 25px 15px;
+  overflow: auto;
+  color: $white;
+  position: relative;
+  z-index: 2;
+  transition: 200ms ease;
+
+  &.hidden {
+    flex: 0 0 0 !important;
+    opacity: 0;
+  }
+
+  .preview + & {
+    // flex: 0 0 350px;
+    flex: initial;
+  }
+
+  > * {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form,
+  .post-types {
+    width: 700px;
+    max-width: none;
+
+    @media (max-width: 1500px) {
+      width: 500px;
+    }
+
+    @media (max-width: 1279px) {
+      width: 100%;
+    }
+  }
+
+  form > * {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .upload-button {
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    span {
+      display: block;
+    }
+
+    input {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  .buttons {
+    margin-top: 25px;
+
+    .btn {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.edit {
+  &-video + iframe {
+    margin-top: 20px;
+  }
+}

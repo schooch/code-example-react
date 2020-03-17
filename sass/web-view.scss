@@ -1,0 +1,17 @@
+@import 'config/variables';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/base';
+
+@import 'components/buttons';
+@import 'components/post';
+@import 'components/video';
+@import 'components/image';
+@import 'components/channels';
+@import 'components/preview';
+@import 'components/comments';
+@import 'components/reports';
+
+.preview-frame {
+    width: 100%;
+}

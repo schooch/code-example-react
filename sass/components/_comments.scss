@@ -1,0 +1,114 @@
+.comment {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+
+  &-form {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #eeeeee;
+    position: relative;
+  }
+
+  &-field {
+    width: 100%;
+    border: 0;
+    border-radius: 18px;
+    background-color: $white;
+    font: inherit;
+    padding-left: 20px;
+    color: inherit;
+    outline: none;
+    vertical-align: middle;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 36px;
+  }
+
+  .editor & {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid #e3e3e3;
+  }
+
+  &-avatar {
+    width: 40px;
+    height: 36px;
+
+    &-wrap {
+      flex: 0 0 40px;
+      margin-right: 14px;
+    }
+  }
+
+  &-content {
+    &-wrap {
+      flex: 1 1 auto;
+    }
+
+    p {
+      font-weight: 500;
+      line-height: 1.86;
+      // white-space: pre-line;
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .date {
+      margin-top: 17px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #9b9b9b;
+    }
+  }
+
+  &-submit {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    right: 23px;
+
+    &[disabled] {
+      opacity: 0.5;
+    }
+
+    img {
+      position: relative;
+      left: 2px;
+    }
+  }
+}
+
+.comments {
+  &-link {
+    color: $primary;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+
+    &-wrap {
+      padding: 5px 40px 12px;
+      order: 4;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+%icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: $white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px 1px rgba($black, .5);
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.placeholder-loading {
+  animation: rotating 1.4s ease-out infinite;
+  
+  &.background {
+    animation: none;
+    position: relative;
+    
+    img {
+      animation: rotating 1.4s ease-out infinite;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.svg-load {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  bottom: 0;
+}
+
+.image {
+  &-hidden {
+    display: none !important;
+  }
+
+  &-mask {
+    clip-path: url(#hexagon-mask);
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    width: 108px;
+    height: 94px;
+    background-color: silver;
+    background-repeat: no-repeat;
+
+    &.sharp {
+      clip-path: polygon(100% 50%,75% 100%,25% 100%,0 50%,25% 0,75% 0);
+    }
+
+    &.placeholder,
+    &.placeholder-loading {
+      background-size: auto;
+    }
+
+    .upload-button & {
+      cursor: pointer;
+    }
+
+    &-wrapper,
+    &-wrapper.upload-button {
+      display: inline-block !important;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+    }
+
+    &-wrapper {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 108px;
+        height: 97px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.063);
+        clip-path: url(#hexagon-mask);
+        background-color: #dad9d9;
+      }
+    }
+
+    & + .icon {
+      @extend %icon;
+      bottom: 12px;
+      right: 5px;
+    }
+  }
+
+  &-holder {
+    background-color: lighten($background, 15%);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+      max-width: 100%;
+      max-height: 300px;
+    }
+
+    .icon {
+      @extend %icon;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

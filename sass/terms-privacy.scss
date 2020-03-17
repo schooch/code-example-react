@@ -1,0 +1,58 @@
+@import 'config/variables';
+@import 'config/reset';
+
+@font-face{
+  font-family:"AvenirNext";
+  src:url("../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+  src:url("../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),url("../fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),url("../fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),url("../fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype");
+}
+@font-face{
+  font-family:"AvenirNext";
+  font-weight: bold;
+  font-style: italic;
+  src:url("../fonts/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix");
+  src:url("../fonts/ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix") format("eot"),url("../fonts/eaafcb26-9296-4a57-83e4-4243abc03db7.woff2") format("woff2"),url("../fonts/25e83bf5-47e3-4da7-98b1-755efffb0089.woff") format("woff"),url("../fonts/4112ec87-6ded-438b-83cf-aaff98f7e987.ttf") format("truetype");
+}
+
+body {
+  font-family: 'AvenirNext', sans-serif;
+  color: $black;
+  padding: 13px 20px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 25px 0 15px;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 15px;
+  margin: 25px 0;
+  
+  li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+.container {
+  padding: 0 23px;
+  margin: 0 auto;
+}

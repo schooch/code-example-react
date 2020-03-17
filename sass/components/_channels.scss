@@ -1,0 +1,65 @@
+.channel {
+  &-image {
+    position: absolute;
+    position: sticky;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-info {
+    padding: 20px;
+    position: relative;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  &-author {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &-name {
+    font-size: 34px;
+    color: $primary;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  &-followers {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &-date-and-location {
+    display: flex;
+    color: #989898;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &-date {
+    margin-right: auto;
+  }
+
+  &-location {
+    text-decoration: underline;
+  }
+
+  &-date,
+  &-location {
+    margin-bottom: 10px;
+  }
+
+  &-intro {
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: normal;
+    font-family: Helvetica, sans-serif;
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Share icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.8891154,2.75357434 L13.2649231,0.123784863 C13.0011154,-0.141478295 12.5509615,0.0478901257 12.5509615,0.423679599 L12.5509615,3.38283749 C12.5509615,3.38283749 2.89603846,2.24662697 0,13.4392585 C0,13.4392585 3.05607692,8.16715328 12.5509615,9.1405217 L12.5509615,11.7732585 C12.5509615,12.1497849 13.0018462,12.3391533 13.2663846,12.0731533 L15.8891154,9.44557434 L18.7888077,6.54020592 C19.0314231,6.29778486 19.0314231,5.90210065 18.7888077,5.6596796 L15.8891154,2.75357434 Z" id="path-1"></path>
+    </defs>
+    <g id="skute-iOs-main-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Skute-Channel" transform="translate(-336.000000, -449.000000)">
+            <g id="Share-icon-Copy" transform="translate(336.000000, 449.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="A-/-Colour-chip-/-Master-colour" mask="url(#mask-2)" fill="#FF3004">
+                    <g transform="translate(-1.461538, -2.210526)" id="Rectangle">
+                        <rect x="0" y="0" width="22" height="18"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

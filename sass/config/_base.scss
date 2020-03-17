@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  // -webkit-overflow-scrolling: touch;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cms-body {
+  overflow: hidden;
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track {
+    background-color: #1c1c1f;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 1px solid #1c1c1f;
+    border-radius: 10px;
+    background-color: $primary;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: #1c1c1f;
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track {
+    background-color: #1c1c1f;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+body.cms-body::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+  outline: none;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 90px;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  overflow: hidden;
+
+  .scrollable {
+    overflow: auto;
+    flex: 1 1 auto;
+    padding: 20px;
+    display: block;
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ReactTable div {
+  outline: none;
+}
+
+// .ReactTable .rt-tbody .rt-tr-group {
+// cursor: pointer;
+// }
+
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-css {
+  display: inline-block;
+}
+.lds-rolling {
+  position: relative;
+}
+.lds-rolling div {
+  color: #ff3004;
+}
+.lds-rolling div,
+.lds-rolling div:after {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 20px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+.lds-rolling div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+  top: 100px;
+  left: 100px;
+}
+.lds-rolling div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling {
+  width: 25px !important;
+  height: 25px !important;
+  -webkit-transform: translate(-12.5px, -12.5px) scale(0.125)
+    translate(12.5px, 12.5px);
+  transform: translate(-12.5px, -12.5px) scale(0.125) translate(12.5px, 12.5px);
+}
+
+.download-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+
+  > * {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+[class^="RichTextEditor__root"] {
+  // max-height: 400px;
+}
+
+// [class^="RichTextEditor__editor"] {
+.public-DraftEditor-content {
+  min-height: 250px;
+  max-height: 450px;
+  font-weight: 500;
+  line-height: 1.86;
+  font-family: AvenirNext, sans-serif;
+  margin-bottom: 16px;
+  color: $background-dark;
+}
+
+.preview-channel-details,
+.public-DraftEditor-content,
+.post-text,
+.comment-content-message {
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: underline;
+  }
+}
